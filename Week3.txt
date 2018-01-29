@@ -1,0 +1,36 @@
+#!/bin/bash
+# Week 3 Homework, Chapter 3
+# Don Yang
+# CSCI 2461-70 Computer Networking - Linux
+
+# List all devices in /Dev folder
+cd /dev; ls -ls
+
+# Display information about block devices
+blkid
+
+# List information about all available block devices
+lsblk
+
+# Displays information and list about block devices
+blkid; lsblk
+
+# List the contents of /dev directory
+#cd
+#cd /dev
+
+# Move back to Documents directory and list contents
+cd 
+cd Documents
+ls
+
+# Create a file named test
+touch test
+
+# Copies test and names it newTest
+# Also list records in and out with 1024 bytes
+dd if=./test of=newTest bs=1024 count=1
+
+# Removes test and newTest files
+rm test
+rm newTest
